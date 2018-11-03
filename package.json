@@ -1,0 +1,19 @@
+{
+  "name": "dragon-cli",
+  "version": "0.2.5",
+  "description": "自动创建潜龙项目",
+  "bin": {
+    "yyb-dragon": "bin/yyb-dragon"
+  },
+  "author": "JR93 <gjr_china@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "chalk-pipe": "^1.2.0",
+    "cosmiconfig": "^5.0.5",
+    "inquirer": "^6.0.0",
+    "puppeteer": "^1.5.0",
+    "simple-logger-util": "^0.1.1",
+    "yargs": "^11.0.0"
+  }
+}
