@@ -150,8 +150,9 @@ class Create {
       await navigationPromise;
 
       logger.success('进入潜龙首页');
-      logger.success('打开 yylive web静态资源');
-      await page.goto('http://xxx.xx.com/admin/dragon/project/list.jsp?projId=314115');
+      logger.success('打开 web静态资源');
+      // 敏感信息隐藏
+      await page.goto('http://xxx.xx.com/');
       await navigationPromise;
 
       logger.success('进入 web静态资源');
@@ -167,8 +168,9 @@ class Create {
       while(!checkNameState) {
         checkNameState = await page.evaluate((name) => {
           return new Promise((resolve, reject) => {
-            $.post('http://xxx.xx.com/admin/dragon/json/isNameExists.jsp', {
-              bizId: 314115,
+            // 敏感信息隐藏
+            $.post('http://xxx.xx.com/', {
+              bizId: 0,
               nameEn: name
             }).done(json => {
               const res = JSON.parse(json);

@@ -6,7 +6,7 @@ const yargs = require('yargs');
 const Create = require('./create');
 
 const argv = yargs
-  .usage('yyb-dragon [options]')
+  .usage('dragon [options]')
   .option('h', {
     alias: 'headless',
     describe: '无头模式',
@@ -14,7 +14,7 @@ const argv = yargs
   })
   .option('p', {
     alias: 'path',
-    describe: 'svn相对basePath(project/)的路径',
+    describe: '相对的路径',
     default: ''
   })
   .help()

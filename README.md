@@ -1,10 +1,10 @@
 <h1 align="center">
-  yyb-dragon
+  dragon-cli
 </h1>
 
 ## Description
 
-自动创建潜龙项目
+自动创建潜龙项目，**个人项目，仅供参考**
 
 ## env
 
@@ -12,14 +12,14 @@
 
 ## Usage
 
-```
-yyb-dragon
+```bash
+dragon
 ```
 
 ```
 // dragon.config.js
 module.exports = {
-  name: 'project name', // 项目名称，须跟svn项目名一致
+  name: 'project name', // 项目名称
   alias: 'alias name', // 别名
   desc: 'description' // 描述
 };
@@ -32,11 +32,11 @@ module.exports = {
 默认是无头模式，若想开启
 
 ```
-yyb-dragon -h false
+dragon -h false
 ```
 
 ### path
 
 ```
-yyb-dragon -p webgit
+dragon -p git
 ```

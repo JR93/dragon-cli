@@ -3,7 +3,7 @@
   "version": "0.2.5",
   "description": "自动创建潜龙项目",
   "bin": {
-    "yyb-dragon": "bin/yyb-dragon"
+    "dragon": "bin/dragon.js"
   },
   "author": "JR93 <gjr_china@163.com>",
   "license": "MIT",
